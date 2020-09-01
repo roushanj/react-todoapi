@@ -7,3 +7,8 @@ class TodoUISerializer(serializers.ModelSerializer):
         model = TodoUI
         fields = '__all__'
 
+class BucketListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BucketList
+        fields = '__all__'
+

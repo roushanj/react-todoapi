@@ -1,11 +1,22 @@
 version: '3'
 
 services:
+  db:
+    image: mysql:latest
+    ports:
+      - '3307:3306'
+    environment:
+       MYSQL_DATABASE: 'todo'
+       MYSQL_USER: 'newuser'
+       MYSQL_PASSWORD: 'password'
+       MYSQL_ROOT_PASSWORD: 'password'
   backend:
     image: backend:latest
     container_name: backend
     ports:
       - 8000:8000
+    depends_on: 
+      - db
   frontendapp:
     image: frontend:latest
     container_name: frontend

@@ -1,12 +1,15 @@
-FROM ubuntu:18.04
+FROM python:3
+ENV PYTHONUNBUFFERED 1
+WORKDIR /usr/src/app
+ARG DJANGO_ALLOWED_HOSTS
+ARG DJANGO_SECRET_KEY
+ARG DJANGO_CORS_ORIGIN_WHITELIST
 
-WORKDIR /app
-RUN apt-get update 
-RUN apt-get install -y python python3-pip
-RUN apt-get install -y python3-dev
-RUN apt-get install -y libmysqlclient-dev
-RUN apt-get install -y nginx
-COPY . /app
+ENV DJANGO_ALLOWED_HOSTS $DJANGO_ALLOWED_HOSTS
+ENV DJANGO_SECRET_KEY $DJANGO_SECRET_KEY
+ENV DJANGO_CORS_ORIGIN_WHITELIST $DJANGO_CORS_ORIGIN_WHITELIST
+
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
+COPY . .
 CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "3", "api.wsgi:application"]

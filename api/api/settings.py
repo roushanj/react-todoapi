@@ -92,8 +92,8 @@ db_info = {
             'NAME': 'todo',
             'USER': 'newuser',
             'PASSWORD': 'password',
-            'HOST': 'localhost',
-            'PORT': '3306',
+            'HOST': 'db',
+            'PORT': '3307',
         }
     }
 }

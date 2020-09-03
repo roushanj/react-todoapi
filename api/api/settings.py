@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '4@)nfv2276vb+$i_!7bosrtl9c395#j%j=80@3f46+eb-%u3p&'
+SECRET_KEY = "4@)nfv2276vb+$i_!7bosrtl9c395#j%j=80@3f46+eb-%u3p&"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 REST_FRAMEWORK = {'DEFAULT_SCHEMA_CLASS':'rest_framework.schemas.coreapi.AutoSchema' }
 # Application definition
@@ -54,6 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ORIGIN_ALLOW_ALL = True
+#CORS_ORIGIN_WHITELIST =os.environ.get("CORS_ORIGIN_WHITELIST").split(" ")
 ROOT_URLCONF = 'api.urls'
 
 TEMPLATES = [
@@ -92,7 +93,7 @@ db_info = {
             'USER': 'newuser',
             'PASSWORD': 'password',
             'HOST': 'localhost',
-            'PORT': '3316',
+            'PORT': '3306',
         }
     }
 }

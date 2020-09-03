@@ -1,0 +1,256 @@
+
+body {
+  margin-top: 5%;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  align-items: center;
+  color:#555;
+  background: #ecf0f3;
+}
+
+
+
+.element {
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
+.card {
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.3),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
+
+.card2 {
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.3),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 400px;
+}
+
+.card2-1 {
+  background: #ecf0f3;
+  margin-left: 55%;
+}
+
+.card3 {
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.3),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 400px;
+}
+
+.card3-1 {
+  background: #ecf0f3;
+}
+
+
+.card-1 {
+  background: #ecf0f3;
+}
+.card-1:hover{
+  background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+}
+
+.card-2 {
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+}
+
+.card-3 {
+  background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+}
+
+.todo-card {
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.3),
+   -8px -8px 12px 0 rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  display: flex;
+  height: 160px;
+  justify-content: center;
+  width: 160px;
+}
+
+.todo-card-1 {
+  background:linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  
+}
+.todo-card-1:hover {
+  background:linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,25));
+  cursor: pointer;
+  
+}
+.todo-card-2 {
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25))
+}
+
+
+.login-div {
+  width:430px;
+  height: 600px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  margin-top: 5%;
+  margin-left: 35%;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px #ffffff;
+}
+.logo {
+  background:url("Logo.png");
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  margin:0 auto;
+  box-shadow: 
+  /* logo shadow */
+  0px 0px 2px #5f5f5f,
+  /* offset */
+  0px 0px 0px 5px #ecf0f3,
+  /*bottom right */
+  8px 8px 15px #a7aaaf,
+  /* top left */
+  -8px -8px 15px #ffffff
+  ;
+}
+.title {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 24px;
+  letter-spacing: 0.5px;
+}
+.sub-title {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 7px;
+  letter-spacing: 3px;
+}
+.fields {
+  width: 100%;
+  padding: 75px 5px 5px 5px;
+}
+.fields input {
+  border: none;
+  outline:none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding:20px 10px 20px 5px;
+}
+.username, .password {
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1,
+              inset -8px -8px 8px #ffffff;
+}
+.fields svg {
+  height: 22px;
+  margin:0 10px -3px 25px;
+}
+.signin-button {
+  outline: none;
+  border:none;
+  cursor: pointer;
+  width:100%;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color:#fff;
+  text-align: center;
+  background: #148f74;
+  box-shadow: 3px 3px 8px #b1b1b1,
+              -3px -3px 8px #ffffff;
+  transition: 0.5s;
+}
+
+.signin-button:hover {
+  background:#148f74b9;
+}
+.signin-button:active {
+  background:#148f744f;
+}
+.link {
+  padding-top: 20px;
+  text-align: center;
+}
+.link a {
+  text-decoration: none;
+  color:#aaa;
+  font-size: 15px;
+}
+
+/*
+Simple forms
+*/
+.sfields {
+  width: 90%;
+  padding: 5px 15px 20px 15px;
+}
+.sfields input {
+  border: none;
+  outline:none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding:20px 10px 20px 5px;
+}
+.userinput {
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: inset 3px 3px 3px 3px #cbced1,
+              inset -3px -3px 3px 3px #ffffff;
+}
+
+.sform-button {
+  outline: none;
+  border:none;
+  cursor: pointer;
+  width:50%;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color:#fff;
+  text-align: center;
+  background: #148f74;
+  box-shadow: 3px 3px 8px #b1b1b1,
+              -3px -3px 8px #ffffff;
+  transition: 0.5s;
+}
+.sform-button:hover {
+  background:#148f74b9;
+}
+.sform-button:active {
+  background:#148f744f;
+}
+
